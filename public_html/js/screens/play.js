@@ -6,13 +6,13 @@ game.PlayScreen = me.ScreenObject.extend({
 		// reset the score
 		game.data.score = 0;
                 
-                me.levelDirector.loadLevel("createdmap01");
+                me.levelDirector.loadLevel("mtgz01");
                 
                 var player = me.pool.pull("mario", 0, 420, {});
-                me.game.world.addChild(player, 3);
+                me.game.world.addChild(player, 7);
                 
                 me.input.bindKey(me.input.KEY.RIGHT, "right");
-
+                 me.input.bindKey(me.input.KEY.LEFT, "left");
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();
 		me.game.world.addChild(this.HUD);
