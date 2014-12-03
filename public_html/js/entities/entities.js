@@ -29,6 +29,11 @@ game.PlayerEntity = me.Entity.extend({
         } else {
             this.body.vel.x = 0;
         }
+        
+        if (me.input.isKeyPressed("up")) {
+            
+            this.body.vel.y -= this.body.accel.y * me.timer.tick;
+        }
 
         this.body.update(delta);
         me.collision.check(this, true, this.collideHandler.bind(this));
@@ -59,7 +64,7 @@ game.LevelTrigger = me.Entity.extend({
     onCollision: function() {
         this.body.setCollisionMask(me.collision.types.NO_OBJECT);
         me.levelDirector.loadLevel(this.level);
-        me.state.current().resetPlayer();
+        me.state.current().resetPlayer(); 
 
     }
 
@@ -67,34 +72,32 @@ game.LevelTrigger = me.Entity.extend({
 
 
 game.BadGuy = me.Entity.extend({
-    init:function(x, y, settings){
-            this._super(me.Entity, 'init', [x, y, {
-                image: "slime",
-                spritewidth: "60",
-                spriteheight: "28",
-                width: 60,
-                height: 28,
-                getShape: function() {
-                    return (new me.Rect(0, 0, 60, 28)).toPolygon(); 
-                }
-            }]);
-    
-    this.spritewidth = 60;
-    var width = settings.width;
-    x = this.pos.x;
-    this.startX = x;
-    this.endX = x + width -this.spritewidth;
-    this.pos.x = x + width-this.spritewidth;
-    this.updateBounds();
-    this.alwaysUpdate = true;
-    this.walk 
-    
+    init: function(x, y, settings) {
+//        this._super(me.Entity, 'init', [x, y, {
+//                image: "slime",
+//                spritewidth: "60",
+//                spriteheight: "28",
+//                width: 60,
+//                height: 28,
+//                getShape: function() {
+//                    return (new me.Rect(0, 0, 60, 28)).toPolygon();
+//                }
+//            }]);
+//
+//        this.spritewidth = 60;
+//        var width = settings.width;
+//        x = this.pos.x;
+//        this.startX = x;
+//        this.endX = x + width - this.spritewidth;
+//        this.pos.x = x + width - this.spritewidth;
+//        this.updateBounds();
+//        this.alwaysUpdate = true;
+//        this.walk
+
     },
-    
-    
-    update:function(delta){
-   
-   
+    update: function(delta) {
+
+
     }
-    
+
 });

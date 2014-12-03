@@ -37,14 +37,12 @@
   </data>
  </layer>
  <objectgroup name="trigger-entities">
-  <object name="LevelTrigger" x="776" y="452" width="54.6667" height="105.333">
+  <object name="levelTrigger" x="758.667" y="438.667" width="78.6667" height="117.333">
    <properties>
     <property name="level" value="nathan02"/>
+    <property name="xSpawn" value="0"/>
+    <property name="ySpawn" value="400"/>
    </properties>
   </object>
- </objectgroup>
- <objectgroup name="Enemy entites">
-  <object name="badguy" x="524" y="509.333" width="234.667" height="49.3333"/>
-  <object name="bayguy2" x="274.667" y="500" width="248" height="61.3333"/>
  </objectgroup>
 </map>
