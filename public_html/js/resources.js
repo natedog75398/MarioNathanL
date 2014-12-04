@@ -20,7 +20,8 @@ game.resources = [
      */
 
     {name: "mtgz01", type: "tmx", src: "data/map/mtgz01.tmx"},
-    {name: "nathan02", type: "tmx", src: "data/map/nathan02.tmx"}
+    {name: "nathan02", type: "tmx", src: "data/map/nathan02.tmx"},
+      {name: "nathan03", type: "tmx", src: "data/map/nathan03.tmx"}
     /* Background music. 
      * @example 
      * {name: "example_bgm", type: "audio", src: "data/bgm/"},

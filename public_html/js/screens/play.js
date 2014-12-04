@@ -7,6 +7,7 @@ game.PlayScreen = me.ScreenObject.extend({
         game.data.score = 0;
 
         me.levelDirector.loadLevel("mtgz01");
+        
 
         this.resetPlayer(0, 400);
 
