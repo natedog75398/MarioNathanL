@@ -21,6 +21,9 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="175" name="mtgz" tilewidth="70" tileheight="70">
+  <image source="../../../../../../Users/Student/Downloads/mtgz.jpg" width="150" height="150"/>
+ </tileset>
  <layer name="background" width="16" height="9">
   <data encoding="base64">
    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABXAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABXAAAAVwAAAFcAAABXAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxAAAAAAAAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwAAAJMAAACTAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAA5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbAAAAkwAAAJAAAACGAAAAhgAAAJEAAABcAAAAAAAAAAAAAAAAAAAAOQAAAAAAAACTAAAAkwAAAJMAAACTAAAAkAAAAIYAAACGAAAAhgAAAIYAAACGAAAAkQAAAJMAAACTAAAAkwAAAJMAAACTAAAA
@@ -32,12 +35,18 @@
   </data>
  </layer>
  <objectgroup name="EnemyEntities">
-  <object name="BadGuy" x="489" y="364" width="137" height="55"/>
+  <object name="BadGuy" x="493" y="364" width="137" height="55"/>
  </objectgroup>
- <objectgroup name="levelTrigger">
+ <objectgroup name="trigger-entities">
   <properties>
    <property name="level" value="nathan03"/>
   </properties>
-  <object name="LevelTrigger" x="965" y="377" width="98" height="184"/>
+  <object name="levelTrigger" x="967" y="372" width="98" height="184">
+   <properties>
+    <property name="level" value="nathan03"/>
+    <property name="xspawn" value="400"/>
+    <property name="yspawn" value="0"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

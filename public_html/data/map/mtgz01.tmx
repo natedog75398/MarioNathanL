@@ -40,7 +40,7 @@
   <properties>
    <property name="level" value="nathan02"/>
   </properties>
-  <object name="levelTrigger" x="758.667" y="438.667" width="78.6667" height="117.333">
+  <object name="levelTrigger" x="765.334" y="442.667" width="78.6667" height="117.333">
    <properties>
     <property name="level" value="nathan02"/>
     <property name="xSpawn" value="0"/>
