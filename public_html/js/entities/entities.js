@@ -92,11 +92,22 @@ game.BadGuy = me.Entity.extend({
         this.pos.x = x + width - this.spritewidth;
         this.updateBounds();
         this.alwaysUpdate = true;
-//        this.walk
-
+        this.walkleft = false;
+        this.alive = true;
+        this.type = "badguy";
+        
+        //this.renderable.addAnimation("run"/ [0, 1, 2,],80);
+        //this.renderable.setAnimation("run");
+        
+          this.body.setVelocity(4, 6);
+          
+        
     },
+    
+    
     update: function(delta) {
-
+       this.body.update(delta);
+        
 
     }
 
